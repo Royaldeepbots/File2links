@@ -9,20 +9,20 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', ''))
-    API_HASH = str(getenv('API_HASH', ''))
-    BOT_TOKEN = str(getenv('BOT_TOKEN'))
+    API_ID = int(getenv('API_ID', '13556430'))
+    API_HASH = str(getenv('API_HASH', '3531771c0d58b9ffc44d12f38c5edbf5'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN', '5510018422:AAFnBjHxEgLN77bouhTX12xq6MyYsxM8z24'))
     name = str(getenv('name', 'filetolinkbot'))
-    SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
+    SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '30'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', ''))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001864443699'))
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "").split())  
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1782834874").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', ''))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'Royaldwip'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
@@ -36,5 +36,5 @@ class Var(object):
     else:
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', ''))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', ''))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'Worldofmovies8'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
