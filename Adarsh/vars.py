@@ -11,11 +11,11 @@ class Var(object):
     MULTI_CLIENT = False
     API_ID = int(getenv('API_ID', '13556430'))
     API_HASH = str(getenv('API_HASH', '3531771c0d58b9ffc44d12f38c5edbf5'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN', '5510018422:AAFnBjHxEgLN77bouhTX12xq6MyYsxM8z24'))
-    name = str(getenv('name', 'filetolinkbot'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN', '6957954774:AAEjXQiSQSI5yK8D5xr50SV9kPQsw2YXYb8'))
+    name = str(getenv('name', 'Royal'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '30'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001864443699'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001995399932'))
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '165.22.216.141'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
@@ -35,6 +35,6 @@ class Var(object):
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://Royaldwip:Royaldwip@cluster0.2zhsqt7.mongodb.net/?retryWrites=true&w=majority'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'Worldofmovies8'))
-    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
+    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://Royaldwip:Royaldwip@cluster0.jldedgb.mongodb.net/?retryWrites=true&w=majority'))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'WomBackup'))
+    BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split())) 
