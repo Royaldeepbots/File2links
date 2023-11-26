@@ -118,7 +118,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="__Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ__ [Support](https://t.me/greymatters_bots_discussion).",
+                text="__Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ__ [Support](https://t.me/royaldwip).",
                 disable_web_page_preview=True)
             return
     await message.reply_text(
@@ -129,7 +129,7 @@ async def help_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("💁‍♂️ Owner", url="https://t.me/royaldwip")],
-                [InlineKeyboardButton("💥 Updated Channel", url="https://t.me/worldofmovies8")]
+                [InlineKeyboardButton("💥 Updated Channel", url="https://t.me/wombackup")]
             ]
         )
     )
