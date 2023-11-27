@@ -55,12 +55,12 @@ async def start(b, m):
         except UserNotParticipant:
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
-                photo="https://telegra.ph/file/43547012f9d6865613820.jpg",
-                caption="<i>𝙹𝙾𝙸𝙽 CHANNEL 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴🔐</i>",
+                photo="https://graph.org/file/c276c57eb00caa5ad67de.jpg",
+                caption="<i><b>Sorry Dude You're Not Joined My Channel. So Please Join Our Channel To Continue</b></i>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Jᴏɪɴ ɴᴏᴡ 🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("🤖 Join Our Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -70,14 +70,14 @@ async def start(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="<i>𝓢𝓸𝓶𝓮𝓽𝓱𝓲𝓷𝓰 𝔀𝓮𝓷𝓽 𝔀𝓻𝓸𝓷𝓰</i> <b> <a href='https://t.me/Royaldwip'>CLICK HERE FOR SUPPORT </a></b>",
+                text="<i>Somethink Went Wrong</i> <b> <a href='https://t.me/Royaldwip'>CLICK HERE FOR SUPPORT </a></b>",
                 
                 disable_web_page_preview=True)
             return
     await StreamBot.send_photo(
         chat_id=m.chat.id,
-        photo ="https://telegra.ph/file/43547012f9d6865613820.jpg",
-        caption =f'Hi {m.from_user.mention(style="md")}!,\nI am Telegram File to Link Generator Bot with Channel support.\nSend me any file and get a direct download link and streamable link.!',
+        photo ="https://graph.org/file/c276c57eb00caa5ad67de.jpg",
+        caption =f'**Hey, {m.from_user.mention(style="md")}!,\n\nMyself [RoyalFile2Link](https://t.me/luku_68279383737_bot) 🔥\n\nSend me a file or Video.\nI would send you download/stream links for that file!**',
         reply_markup=buttonz)
 
 
@@ -103,12 +103,12 @@ async def help_handler(bot, message):
         except UserNotParticipant:
             await StreamBot.send_photo(
                 chat_id=message.chat.id,
-                photo="https://telegra.ph/file/ca10e459bc6f48a4ad0f7.jpg",
-                Caption="**𝙹𝙾𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝚄𝚂𝙴 ᴛʜɪs Bᴏᴛ!**\n\n__Dᴜᴇ ᴛᴏ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ Bᴏᴛ!__",
+                photo="https://graph.org/file/c276c57eb00caa5ad67de.jpg",
+                Caption="**Sorry Dude You're Not Joined My Channel. So Please Join Our Channel To Continue**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("🤖 Join Our Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -122,14 +122,22 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="""<b> Send me any file or video i will give you streamable link and download link.</b>\n
-<b> I also support Channels, add me to you Channel and send any media files and see miracle✨ also send /list to know all commands""",
+        text="""<b><b>sᴏᴍᴇ ʜɪᴅᴅᴇɴ ᴅᴇᴛᴀɪʟs 🔥</b>
+
+<b>╭━━━━〔ꜰɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
+┃
+┣⪼<b>ɴᴀᴍᴇ : <a href='https://t.me/royaldwip'>ʀᴏʏᴀʟ sᴛʀᴇᴀᴍ ʙᴏᴛ</a></b>
+┣⪼<b>ꜱᴇʀᴠᴇʀ : ʜᴇʀᴜᴋᴏ</b>
+┣⪼<b>ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ</b>
+┣⪼<b>ᴜᴘᴅᴀᴛᴇꜱ : <a href='https://telegram.me/Wombackup'>ᴡᴏᴍ ʙᴀᴄᴋᴜᴘ</a></b>
+┃
+<b>╰━━━━〔ᴘʟᴇᴀꜱᴇ sᴜᴘᴘᴏʀᴛ〕</b>""",
         
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("💁‍♂️ Owner", url="https://t.me/royaldwip")],
-                [InlineKeyboardButton("💥 Updated Channel", url="https://t.me/wombackup")]
+                [InlineKeyboardButton("Developer 🇮🇳", url="https://t.me/royaldwip")],
+                [InlineKeyboardButton("About Developer", url="https://t.me/aboutroyaldwip")]
             ]
         )
     )
