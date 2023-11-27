@@ -87,7 +87,7 @@ async def help_handler(bot, message):
         await db.add_user(message.from_user.id)
         await bot.send_message(
             Var.BIN_CHANNEL,
-            f"**Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ **\n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{message.from_user.first_name}](tg://user?id={message.from_user.id}) __Started Your Bot !!__"
+            f"**#New_User**\n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{message.from_user.first_name}](tg://user?id={message.from_user.id}) __Started Your Bot !!__"
         )
     if Var.UPDATES_CHANNEL != "None":
         try:
@@ -137,7 +137,7 @@ async def help_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("Developer 🇮🇳", url="https://t.me/royaldwip")],
-                [InlineKeyboardButton("About Developer", url="https://t.me/aboutroyaldwip")]
+                [InlineKeyboardButton("About Developer", url="https://t.me/about_royaldwip")]
             ]
         )
     )
