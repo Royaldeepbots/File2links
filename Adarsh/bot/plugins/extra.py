@@ -17,12 +17,12 @@ async def maintainers(b,m):
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Bot Fully Managed By This [Person](https://t.me/Royaldwip) ❤",
+                    text="**Bot Fully Managed By This [Person](https://t.me/Royaldwip) ❤**",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("About Owner", url=f"https://t.me/aboutroyaldwip")
+                                InlineKeyboardButton("About Owner", url=f"https://t.me/about_royaldwip")
                             ]
                         ]
                     ),
