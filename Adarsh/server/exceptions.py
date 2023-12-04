@@ -1,6 +1,6 @@
 
 class InvalidHash(Exception):
-    message = "Error"
+    message = "𝗔𝗡 𝗘𝗥𝗥𝗢𝗥 𝗢𝗖𝗖𝗨𝗥𝗥𝗘𝗗 [ 𝗛𝗔𝗦𝗛 ]"
 
 class FIleNotFound(Exception):
-    message = "𝗹𝗶𝗻𝗸 𝗶𝘀 𝗼𝗹𝗱𝗲𝗿 𝘁𝗵𝗮𝗻 𝟯 𝗺𝗼𝗻𝘁𝗵𝘀 𝗸𝗶𝗻𝗱𝗹𝘆 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝘄𝗶𝘁𝗵 @Riyaldwip 𝗶𝗻 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 / 𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺"
+    message = "𝗟𝗜𝗡𝗞 𝗜𝗦 𝗢𝗟𝗗𝗘𝗥 𝗧𝗛𝗔𝗡 𝟯 𝗠𝗢𝗡𝗧𝗛 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 ' @royaldwip ' 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 𝗙𝗢𝗥 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘 𝗡𝗘𝗪 𝗗𝗜𝗥𝗘𝗖𝗧 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗟𝗜𝗡𝗞 ☠️"
