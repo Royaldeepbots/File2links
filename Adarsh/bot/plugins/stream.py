@@ -96,7 +96,7 @@ async def private_receive_handler(c: Client, m: Message):
             return
     try:
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
-        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/?hash={get_hash(log_msg)}"
+        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}/?hash={get_hash(log_msg)}"
         online_link = f"{Var.URL}{str(log_msg.id)}/?hash={get_hash(log_msg)}"
        
         msg_text ="""<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n\n<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> `{}`\n\n<b> 🖥WATCH  :</b> `{}`\n\n<b>🚸 Nᴏᴛᴇ : LINK WILL NOT EXPIRE UNTIL [I](https://t.me/royaldwip) DELETE</b>"""
