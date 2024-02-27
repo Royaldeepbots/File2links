@@ -120,7 +120,7 @@
 
                 <!-- web title -->
                 <div class="container-fluid">
-                    <a class="navbar-brand  text-light fw-bold " href="https://telegram.me/WomBackup">
+                    <a class="navbar-brand  text-light fw-bold " href="https://telegram.me/SwiftHornCinema">
                         <span class="bg-clip-text sm:text-[25px] text-[22px] text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                             Swift-Horn | Cinema
                           </span>
@@ -191,29 +191,19 @@
                                 HD Player(4K)
                             </div>
                             <div onclick="lazyDownload()" class="col-lg-4 p-2 col-12 rounded-3xl bg-dark text-white text-center align-items-center hover:bg-gradient-to-r from-red-500 to-violet-500 hover:shadow-md hover:shadow-gray-100 hover:translate-y-[-5px] transition transition-all duration-300 wow animate__animated animate__rubberBand font-bold">
-                            <• DOWNLOAD NOW •>
+                            DOWNLOAD NOW
                             </div>
                         </div>
                 </div>
             </div>
-            <div class="justify-content-center align-items-center w-100 d-flex">
-                    <div class="row d-flex w-100 justify-content-center align-items-center">
-                        <div class="col-lg-8 col-10  py-2 text-center bg-danger rounded-4 text-sm wow animate__animated animate__FadeIn">
-			 If Video Doesn't Play On Browser Or Player Than Download & Watch!<br><br>
-	                 NOTE : USE PLAY-IT APP FOR FIRST & GOOD STREAMING 🚀
-                    </div>
-                </div>
-            </div>
-                <!-- For LazyDeveloper // credit --- Please don't remove footer credit -->
-            ©  <script type="text/JavaScript">
-                var theDate=new Date() 
-                    document.write(theDate.getFullYear()) 
-            </script> Copyright :
-                <a class="bg-clip-text text-[16px] text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-bold tracking-wide px-1" href="https://telegram.me/WomBackup">WOM-BACKUP ™</a>
-                <!--🥰  Thank you for giving me credit @LazyDeveloperr  🥰 -->
-                All right reserved
-            </div>   
-        </footer>
+            <div class="justify-content-center align-items-center w-100 d-flex" style="background-color: #000000;">
+		    <div class="row d-flex w-100 justify-content-center align-items-center">
+			    <div class="col-lg-8 col-10 py-2 text-center bg-danger rounded-4 text-sm wow animate__animated animate__fadeInUp" style="animation-duration: 3s; animation-iteration-count: 1; background: linear-gradient(to bottom, #ff0000, #8b0000);">
+				    This is a streaming page of Swift-Horn Cinema <br>
+				    If You Reach This Page With Shortner Than Kindly Join @SwiftHornCinema Because This Page Design For Online Movie Streaming For Free...
+			    </div>
+		    </div>
+	    </div>
 
 <!-- if you are for this source code then please thanks to me @LazyDeveloperr && Dont remove the cr -->
     <script src="js/wow.min.js"></script>
@@ -289,20 +279,11 @@
             window.location.href = openVlc;
         }
 	    
-	function openMxPlayer() {
-		const lazyLink = lazyLink; // Replace with the actual video link or use lazyLink if that's your link
-		const packageId = "com.mxtech.videoplayer";
-		
-		const openMx = `intent:${lazyLink}#Intent;package=${packageId};end`;
-		
-		try {
-			// Try to open MX Player
-		window.location.href = openMx;
-		} catch (error) {
-			console.error("Error opening MX Player:", error);
-        // Handle any errors, e.g., fallback to a different player or display a message to the user.
-		}
-	}
+	function mx_player() {
+            const openLazyLink = lazyLink;
+            const openMx = `intent:${openLazyLink}#Intent;package=com.mxtech.videoplayer;end`;
+            window.location.href = openMx;
+        }
 	    
 	function playit_player() {
     	const openLazyLink = lazyLink;
