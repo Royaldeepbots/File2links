@@ -205,6 +205,42 @@
 		    </div>
 	    </div>
 
+	    <style>
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .animated-box {
+        background: linear-gradient(to right, #FF0000, #8B0000);
+        padding: 10px;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+        animation: fadeIn 1s ease-out; /* Adjust the duration and easing as needed */
+    }
+</style>
+	    <div class="animated-box">
+		    Link Generate: 
+		    <script type="text/javascript">
+			    var currentDate = new Date();
+			    var linkGenerateDate = new Date(currentDate);
+			    linkGenerateDate.setDate(currentDate.getDate() - 1);
+			    
+			    var day = linkGenerateDate.getDate();
+			    var month = linkGenerateDate.toLocaleString('default', { month: 'short' });
+			    var year = linkGenerateDate.getFullYear();
+			    
+			    document.write(day + " " + month + " " + year);
+		    </script>
+		    & Link Expire After 7 Days<br>
+		    Thank You ♥
+	    </div>
+
 <!-- if you are for this source code then please thanks to me @LazyDeveloperr && Dont remove the cr -->
     <script src="js/wow.min.js"></script>
     <script>
