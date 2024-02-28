@@ -243,7 +243,18 @@
 				    
 				    document.write(day + " " + month + " " + year);
 			    </script>
-			    <br>Link Expires After 7 Days
+			    <br>Link Expired On : 
+			    <script type="text/javascript">
+				    var currentDate = new Date();
+				    var linkGenerateDate = new Date(currentDate);
+				    linkGenerateDate.setDate(currentDate.getDate() + 7);
+				    
+				    var day = linkGenerateDate.getDate();
+				    var month = linkGenerateDate.toLocaleString('default', { month: 'short' });
+				    var year = linkGenerateDate.getFullYear();
+				    
+				    document.write(day + " " + month + " " + year);
+			    </script>
 		    </p>
 		    <br>
 		    <p>Thank You For Visit :)</p>
