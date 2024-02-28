@@ -204,76 +204,93 @@
 			    </div>
 		    </div>
 	    </div>
-	    
+
 	    <style>
-		    @keyframes fadeIn {
-			    from {
-				    opacity: 0;
-			    }
-			    to {
-				    opacity: 1;
-			    }
-		    }
-		    
-		    .animated-box {
-			    background: linear-gradient(to right, #FF0000, #8B0000);
-			    padding: 20px;
-			    text-align: center;
-			    color: white;
-			    border-radius: 30px;
-			    animation: fadeIn 3s ease-out; /* Adjust the duration and easing as needed */
-		    }
-		    
-		    .animated-box p {
-			    margin: 0;
-			    font-weight: bold;
-		    }
-	    </style>
-	    
-	    <div class="animated-box">
-		    <p>Link Generate Date: 
-			    <script type="text/javascript">
-				    var currentDate = new Date();
-				    var linkGenerateDate = new Date(currentDate);
-				    linkGenerateDate.setDate(currentDate.getDate() - 1);
-				    
-				    var day = linkGenerateDate.getDate();
-				    var month = linkGenerateDate.toLocaleString('default', { month: 'short' });
-				    var year = linkGenerateDate.getFullYear();
-				    
-				    document.write(day + " " + month + " " + year);
-			    </script>
-			    <br>Link Expired On : 
-			    <script type="text/javascript">
-				    var currentDate = new Date();
-				    var linkGenerateDate = new Date(currentDate);
-				    linkGenerateDate.setDate(currentDate.getDate() + 7);
-				    
-				    var day = linkGenerateDate.getDate();
-				    var month = linkGenerateDate.toLocaleString('default', { month: 'short' });
-				    var year = linkGenerateDate.getFullYear();
-				    
-				    document.write(day + " " + month + " " + year);
-			    </script>
-		    </p>
-		    <br>
-		    <p>Thank You For Visit :)</p>
-	    </div>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f0f0f0; /* Set your desired background color */
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .animated-text {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fadeIn 3s ease-out; /* Adjust the duration and easing as needed */
+        color: yellow;
+        text-align: center;
+    }
+
+    .top-message {
+        color: white;
+        text-align: center;
+        margin: 20px 0; /* Added margin for spacing */
+    }
+</style>
+
+<div class="top-message">
+    <p>This is your top message with some line spacing.</p>
+</div>
+
+<div class="animated-text">
+    <p>Link Generate Date:
+        <script type="text/javascript">
+            var currentDate = new Date();
+            var linkGenerateDate = new Date(currentDate);
+            linkGenerateDate.setDate(currentDate.getDate() - 1);
+
+            var day = linkGenerateDate.getDate();
+            var month = linkGenerateDate.toLocaleString('default', { month: 'short' });
+            var year = linkGenerateDate.getFullYear();
+
+            document.write(day + " " + month + " " + year);
+        </script>
+        <br>Link Expired On :
+        <script type="text/javascript">
+            var currentDate = new Date();
+            var linkGenerateDate = new Date(currentDate);
+            linkGenerateDate.setDate(currentDate.getDate() + 7);
+
+            var day = linkGenerateDate.getDate();
+            var month = linkGenerateDate.toLocaleString('default', { month: 'short' });
+            var year = linkGenerateDate.getFullYear();
+
+            document.write(day + " " + month + " " + year);
+        </script>
+    </p>
+    <br>
+    <p>Thank You For Visit :)</p>
+</div>
+
 
 <!-- if you are for this source code then please thanks to me @LazyDeveloperr && Dont remove the cr -->
     <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <script>
+<script>
+    new WOW({
+        offset: 100, // Change the offset as needed
+        mobile: false, // Enable/disable WOW.js on mobile
+    }).init();
+
+    document.addEventListener("DOMContentLoaded", function() {
         var div = document.getElementById('myDiv');
         var text = div.textContent;
 
         if(text.length > 60){
             div.textContent = text.slice(0, 60)+"....";
         }
+    });
+</script>
 
-    </script>
     <!--🥰  Thank you for giving me credit @LazyDeveloperr  🥰 -->
     <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
 	<script>
